@@ -135,3 +135,6 @@ trap '__vsc_preexec_all "$_"' DEBUG
 __vsc_original_prompt_command=${PROMPT_COMMAND:-}
 psql --username=freecodecamp --dbname=salon
 ./salon.sh
+./salon.sh
+./salon.sh
+pg_dump -cC --inserts -U freecodecamp salon > salon.sql
